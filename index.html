@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VoteSecure - Modern Online Voting System</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <i class="fas fa-vote-yea"></i>
+        VoteSecure
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="results.php">Results</a>
+        <a href="login.php">Login</a>
+        <a href="register.php" class="btn-nav">Register</a>
+      </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <i class="fas fa-shield-alt"></i>
+        Secure & Transparent
+      </div>
+      <h1 class="hero-title">
+        <span class="gradient-text">Vote</span> with Confidence
+      </h1>
+      <p class="hero-subtitle">
+        Experience the future of democracy with our modern, secure online voting platform.
+        Your voice matters in shaping our digital democracy.
+      </p>
+      <div class="hero-actions">
+        <a href="register.php" class="btn primary large">
+          <i class="fas fa-user-plus"></i>
+          Get Started
+        </a>
+        <a href="#about" class="btn secondary large">
+          <i class="fas fa-info-circle"></i>
+          Learn More
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Why Choose VoteSecure?</h2>
+        <p>Revolutionizing democracy through technology and transparency</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="about-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3>Bank-Level Security</h3>
+          <p>Advanced encryption and authentication ensure your vote remains confidential and tamper-proof.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3>Universal Access</h3>
+          <p>Vote from anywhere, on any device. Our responsive design works seamlessly across all platforms.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3>Real-Time Results</h3>
+          <p>Watch election results update live as votes are cast, ensuring transparency throughout the process.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="section features-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Powerful Features</h2>
+        <p>Everything you need for modern democratic participation</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-user-check"></i>
+          </div>
+          <h3>User Authentication</h3>
+          <p>Secure registration and login system with unique voter identification.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-vote-yea"></i>
+          </div>
+          <h3>One-Person-One-Vote</h3>
+          <p>Advanced duplicate prevention ensures every eligible voter gets exactly one vote.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <h3>Mobile Optimized</h3>
+          <p>Responsive design that works perfectly on smartphones, tablets, and desktops.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-chart-bar"></i>
+          </div>
+          <h3>Live Analytics</h3>
+          <p>Real-time voting statistics and comprehensive election result dashboards.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-cog"></i>
+          </div>
+          <h3>Admin Panel</h3>
+          <p>Complete administrative control with user management and election oversight.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-bell"></i>
+          </div>
+          <h3>Notifications</h3>
+          <p>Stay informed with real-time updates on election status and important announcements.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number" id="totalUsers">0</div>
+          <div class="stat-label">Registered Voters</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" id="totalVotes">0</div>
+          <div class="stat-label">Votes Cast</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" id="activeElections">1</div>
+          <div class="stat-label">Active Elections</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" id="securityRating">100%</div>
+          <div class="stat-label">Security Rating</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Ready to Make Your Voice Heard?</h2>
+        <p>Join thousands of voters who trust VoteSecure for secure, transparent elections.</p>
+        <div class="cta-actions">
+          <a href="register.php" class="btn primary large">
+            <i class="fas fa-rocket"></i>
+            Start Voting Now
+          </a>
+          <a href="results.php" class="btn outline large">
+            <i class="fas fa-chart-bar"></i>
+            View Results
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">
+            <i class="fas fa-vote-yea"></i>
+            VoteSecure
+          </div>
+          <p>Empowering democracy through secure, accessible online voting technology.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="results.php">Results</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Account</h4>
+          <ul>
+            <li><a href="login.php">Login</a></li>
+            <li><a href="register.php">Register</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <ul>
+            <li><i class="fas fa-envelope"></i> support@voting.com</li>
+            <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+            <li><i class="fas fa-map-marker-alt"></i> Digital Democracy HQ</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 VoteSecure. All rights reserved. | Made with <i class="fas fa-heart"></i> for democracy</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/landing.js"></script>
+</body>
+</html>
