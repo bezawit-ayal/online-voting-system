@@ -1,0 +1,1012 @@
+/* =========================
+   GLOBAL RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background: #f3f4f6;
+    /* light grey */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+    background: #1f1f1f;
+    color: white;
+    padding: 15px 25px;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff4da6;
+    /* pink */
+}
+
+.navbar a {
+    color: #ddd;
+    margin-left: 15px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #ff4da6;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero {
+    background: linear-gradient(135deg, #ff4da6, #6b7280);
+    color: white;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: auto;
+    opacity: 0.9;
+}
+
+.hero-buttons {
+    margin-top: 20px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.btn {
+    display: inline-block;
+    padding: 12px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: #ff4da6;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #e60073;
+    transform: translateY(-3px);
+}
+
+.btn-secondary {
+    background: #6b7280;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: #4b5563;
+    transform: translateY(-3px);
+}
+
+/* =========================
+   SECTIONS
+========================= */
+.section {
+    padding: 60px 20px;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+.section.alt {
+    background: #e5e7eb;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+.container {
+    width: 92%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* =========================
+   GRID SYSTEM
+========================= */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* =========================
+   CARDS
+========================= */
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+    border-left: 4px solid #ff4da6;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+/* =========================
+   STEPS
+========================= */
+.steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.step {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.step h3 {
+    color: #ff4da6;
+}
+
+/* =========================
+   CTA SECTION
+========================= */
+.cta {
+    background: #ff4da6;
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.cta-buttons a {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 20px;
+    background: white;
+    color: #ff4da6;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cta-buttons a:hover {
+    background: #f3f4f6;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.footer {
+    background: #111827;
+    color: #ccc;
+    padding: 50px 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.footer a {
+    color: #ff4da6;
+    display: block;
+    margin-top: 8px;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #333;
+    padding-top: 15px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .navbar-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* =========================
+   AUTH PAGE LAYOUT
+========================= */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+    padding: 20px;
+}
+
+/* =========================
+   AUTH CARD
+========================= */
+.auth-card {
+    width: 100%;
+    max-width: 420px;
+    background: white;
+    padding: 35px;
+    border-radius: 14px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #ff4da6;
+}
+
+/* TITLE */
+.auth-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+/* =========================
+   FORM
+========================= */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #444;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #ff4da6;
+    box-shadow: 0 0 5px rgba(255, 77, 166, 0.3);
+}
+
+/* =========================
+   BUTTON
+========================= */
+.btn {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: #ff4da6;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #e60073;
+    transform: translateY(-2px);
+}
+
+/* full width button */
+.btn-block {
+    width: 100%;
+    display: block;
+}
+
+/* =========================
+   ALERT BOXES
+========================= */
+.alert {
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.alert-error {
+    background: #ffe5e5;
+    color: #b00020;
+    border-left: 4px solid #ff0000;
+}
+
+.alert-info {
+    background: #e6f0ff;
+    color: #1e40af;
+    border-left: 4px solid #2563eb;
+}
+
+/* =========================
+   NAVBAR FIX
+========================= */
+.navbar-menu a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar-menu a:hover {
+    color: #ff4da6;
+}
+
+/* =========================
+   DASHBOARD HEADER
+========================= */
+.dashboard-header {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.dashboard-welcome {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff4da6;
+}
+
+.dashboard-subtitle {
+    color: #666;
+    margin-top: 5px;
+}
+
+/* =========================
+   GRID SYSTEM FIX
+========================= */
+.grid {
+    display: grid;
+    gap: 20px;
+}
+
+.grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 768px) {
+    .grid-cols-2 {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================
+   STAT CARDS (IMPORTANT FIX)
+========================= */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.stat-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+    border-left: 4px solid #ff4da6;
+    transition: 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-value {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ff4da6;
+}
+
+.stat-label {
+    color: #666;
+    margin-top: 5px;
+}
+
+/* =========================
+   CARDS (UNIFIED LOOK)
+========================= */
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    margin-top: 20px;
+}
+
+.card-header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #111;
+    border-left: 4px solid #ff4da6;
+    padding-left: 10px;
+}
+
+/* =========================
+   TABLE STYLING (IMPORTANT)
+========================= */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.table td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+.table tr:hover {
+    background: #f9fafb;
+}
+
+/* =========================
+   ALERTS
+========================= */
+.alert {
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.alert-success {
+    background: #e8fff0;
+    border-left: 4px solid #22c55e;
+    color: #166534;
+}
+
+.alert-info {
+    background: #eef2ff;
+    border-left: 4px solid #3b82f6;
+    color: #1e3a8a;
+}
+
+.alert-error {
+    background: #ffe5e5;
+    border-left: 4px solid #ef4444;
+    color: #991b1b;
+}
+
+/* =========================
+   BUTTON FULL WIDTH FIX
+========================= */
+.btn-block {
+    width: 100%;
+    display: block;
+}
+
+/* =========================
+   NAV MENU FIX
+========================= */
+.navbar-menu a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar-menu a:hover {
+    color: #ff4da6;
+}
+
+/* =========================
+   AUTH CONTAINER (shared)
+========================= */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+    padding: 20px;
+}
+
+/* =========================
+   AUTH CARD
+========================= */
+.auth-card {
+    width: 100%;
+    max-width: 450px;
+    background: white;
+    padding: 35px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+    border-top: 4px solid #ff4da6;
+}
+
+/* TITLE */
+.auth-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+/* =========================
+   FORM GROUP
+========================= */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #444;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #ff4da6;
+    box-shadow: 0 0 6px rgba(255, 77, 166, 0.3);
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.btn {
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+}
+
+.btn-primary {
+    background: #ff4da6;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #e60073;
+    transform: translateY(-2px);
+}
+
+.btn-block {
+    width: 100%;
+    display: block;
+}
+
+/* =========================
+   ALERT BOXES
+========================= */
+.alert {
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.alert-error {
+    background: #ffe5e5;
+    border-left: 4px solid #ef4444;
+    color: #991b1b;
+}
+
+.alert-success {
+    background: #e8fff0;
+    border-left: 4px solid #22c55e;
+    color: #166534;
+}
+
+/* =========================
+   LINK UNDER FORM
+========================= */
+.auth-link {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.auth-link a {
+    color: #ff4da6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auth-link a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   NAVBAR LINKS
+========================= */
+.navbar-menu a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.navbar-menu a:hover {
+    color: #ff4da6;
+}
+
+/* =========================
+   VOTING PAGE LAYOUT
+========================= */
+.voting-section {
+    margin-top: 30px;
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.voting-title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ff4da6;
+    margin-bottom: 10px;
+}
+
+.voting-status {
+    background: #e8fff0;
+    border-left: 4px solid #22c55e;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    color: #166534;
+}
+
+.voting-instructions {
+    background: #f3f4f6;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* =========================
+   GRID FIX FOR VOTING
+========================= */
+.grid {
+    display: grid;
+    gap: 20px;
+}
+
+.grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 900px) {
+    .grid-cols-3 {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================
+   CANDIDATE CARD (ENHANCED)
+========================= */
+.candidate-card {
+    background: white;
+    border-radius: 14px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.candidate-card:hover {
+    transform: translateY(-6px);
+    border-color: #ff4da6;
+}
+
+/* SELECTED STATE (VERY IMPORTANT) */
+.candidate-card.selected {
+    border: 2px solid #ff4da6;
+    box-shadow: 0 0 15px rgba(255, 77, 166, 0.3);
+}
+
+/* =========================
+   IMAGE AREA
+========================= */
+.candidate-card-image {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.candidate-card-image img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ff4da6;
+}
+
+/* =========================
+   TEXT CONTENT
+========================= */
+.candidate-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.candidate-bio {
+    font-size: 13px;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* =========================
+   SELECTED SUMMARY BOX
+========================= */
+#selectedCandidates {
+    background: #f9fafb;
+    border-left: 4px solid #ff4da6;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* =========================
+   SUBMIT BUTTON
+========================= */
+.btn-success {
+    background: #ff4da6;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-success:hover {
+    background: #e60073;
+    transform: scale(1.02);
+}
+
+/* =========================
+   RESULTS ITEM LAYOUT
+========================= */
+.result-item {
+    display: grid;
+    grid-template-columns: 80px 1fr 1fr 120px;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.result-item:hover {
+    background: #fafafa;
+}
+
+/* =========================
+   IMAGE
+========================= */
+.result-image {
+    font-size: 40px;
+    text-align: center;
+}
+
+.result-image img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ff4da6;
+}
+
+/* =========================
+   NAME
+========================= */
+.result-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+}
+
+/* =========================
+   BAR SECTION
+========================= */
+.result-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Background bar */
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background: #e5e7eb;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* Fill bar */
+.progress-fill {
+    height: 100%;
+    border-radius: 20px;
+}
+
+/* percentage text */
+.result-percentage {
+    font-size: 13px;
+    color: #555;
+    min-width: 60px;
+}
+
+/* =========================
+   VOTE COUNT BOX
+========================= */
+.result-votes {
+    text-align: center;
+    font-weight: bold;
+    color: #111;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+    .result-item {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .result-bar {
+        justify-content: center;
+    }
+}
+
+/* =========================
+   RESULTS GRID (NEW STYLE)
+========================= */
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* =========================
+   RESULT CARD
+========================= */
+.result-card {
+    background: white;
+    padding: 18px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    border-top: 4px solid #ff4da6;
+    transition: 0.3s;
+}
+
+.result-card:hover {
+    transform: translateY(-6px);
+}
+
+/* =========================
+   TOP SECTION
+========================= */
+.result-top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.result-avatar img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ff4da6;
+    /* optional pink border */
+}
+
+/* =========================
+   TEXT
+========================= */
+.result-name {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.result-meta {
+    font-size: 12px;
+    color: #777;
+}
+
+/* =========================
+   BAR
+========================= */
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background: #e5e7eb;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #ff4da6, #ff85c2);
+    border-radius: 20px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.result-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #444;
+}
+
+.percent {
+    font-weight: bold;
+    color: #ff4da6;
+}
+
+.votes {
+    color: #666;
+}
+
+.hidden-admin {
+    display: none;
+}
